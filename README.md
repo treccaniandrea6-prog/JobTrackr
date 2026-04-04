@@ -1,133 +1,134 @@
-# JobTrackr – Job Application Management Platform
+# 🚀 JobTrackr
 
-JobTrackr is a full-stack web application designed to help users track, manage, and organize their job applications in a clean, structured, and professional way.
-
----
-
-## 🚀 Tech Stack
-
-**Frontend**
-- React (Vite)
-- React Router
-- Context API
-
-**Backend**
-- Node.js
-- Express.js
-
-**Database**
-- MySQL
-
-**Authentication**
-- JWT (JSON Web Tokens)
-- bcrypt (password hashing)
-
----
-
-## ✨ Features
-
-### 🔐 Authentication
-- User registration
-- User login
-- JWT-based authentication
-- Protected routes
-
-### 👤 User
-- View profile
-- Update profile
-- Secure session handling
-
-### 📊 Job Applications
-- Create job applications
-- View all applications (user-specific)
-- Edit applications
-- Delete applications
-
-### 🔍 Advanced Features
-- Filter by application status
-- Search by company or role
-- Clean and structured dashboard
-
----
-
-## 🧠 Application Structure
-
-### Backend (REST API)
-- /api/auth
-- /api/users
-- /api/applications
-
-### Database Tables
-
-**users**
-- id
-- name
-- email
-- password
-- created_at
-- updated_at
-
-**applications**
-- id
-- user_id
-- company_name
-- role_title
-- location
-- status
-- application_date
-- job_link
-- notes
-- created_at
-- updated_at
+JobTrackr is a full-stack web application designed to help users manage their job applications in a simple, organized and efficient way.
 
 ---
 
 ## 🌐 Live Demo
 
-Frontend: (add Netlify link here)  
-Backend: (add Render link here)
+Frontend: https://joobtrackr.netlify.app  
+Backend API: https://jobtrackr-backend-ctkm.onrender.com  
 
 ---
 
-## ⚙️ Installation
+## 🧠 Project Overview
 
-### Clone the repository
-git clone https://github.com/YOUR_USERNAME/JobTrackr.git  
-cd JobTrackr
+JobTrackr allows users to:
 
-### Backend setup
+- Create an account and log in securely  
+- Track job applications in one place  
+- Add new job opportunities  
+- Edit and update application details  
+- Delete applications  
+- Manage their job search pipeline  
+
+This project was built as a complete full-stack application with real deployment and database integration.
+
+---
+
+## 🛠 Tech Stack
+
+Frontend:
+- React (Vite)
+- JavaScript
+- CSS
+
+Backend:
+- Node.js
+- Express.js
+
+Database:
+- MySQL (Railway)
+
+Deployment:
+- Netlify (Frontend)
+- Render (Backend)
+
+---
+
+## 🔐 Authentication
+
+- JWT-based authentication  
+- Protected routes  
+- User-specific data access  
+
+---
+
+## ⚙️ Features
+
+- User registration and login  
+- Create job applications  
+- View all applications  
+- Edit application details  
+- Delete applications  
+- Persistent database storage  
+
+---
+
+## 🧩 Architecture
+
+The application follows a client-server architecture:
+
+- The frontend communicates with the backend through REST APIs  
+- The backend handles authentication, business logic and database operations  
+- The database stores users and job applications  
+
+---
+
+## 🧪 Testing
+
+The following functionalities have been tested:
+
+- Register / Login  
+- CRUD operations on applications  
+- Navigation between pages  
+- Session handling  
+
+---
+
+## ⚠️ Known Issues
+
+- Minor issue when editing an application with an empty date field  
+
+---
+
+## 📦 Installation (Local Setup)
+
+1. Clone the repository  
+git clone https://github.com/treccaniandrea6-prog/JobTrackr.git  
+cd JobTrackr  
+
+2. Backend setup  
 cd backend  
 npm install  
 npm run dev  
 
-### Frontend setup
+3. Frontend setup  
 cd frontend  
 npm install  
 npm run dev  
 
 ---
 
-## 🔐 Environment Variables
+## 📌 Environment Variables
 
-Create a `.env` file inside `/backend`:
+The backend requires the following environment variables:
 
-PORT=5001  
-DB_HOST=localhost  
-DB_USER=root  
-DB_PASSWORD=your_password  
-DB_NAME=jobtrackr  
+DB_HOST=your_database_host  
+DB_USER=your_database_user  
+DB_PASSWORD=your_database_password  
+DB_NAME=your_database_name  
 JWT_SECRET=your_secret_key  
-
----
-
-## 📌 Notes
-
-- This project was built as a final project for a Full Stack Master.
-- Focus on clean architecture, authentication, and user experience.
-- Designed to simulate a real-world SaaS product.
+CLIENT_URL=your_frontend_url  
 
 ---
 
 ## 👨‍💻 Author
 
-Andrea Treccani
+Andrea Treccani  
+
+---
+
+## 📄 License
+
+This project is for educational purposes only.
